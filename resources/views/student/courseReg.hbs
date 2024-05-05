@@ -1,0 +1,27 @@
+<div class="sub-header bg-[url('https://project-ltnc.vercel.app/assets/img/sub-header.jpg')] w-full h-[200px]">
+  <div class="sub-header__title text-[50px] flex justify-center items-center h-full text-white">ĐĂNG KÍ MÔN HỌC</div>
+</div>
+<div class="my-[40px]">
+    <div class="container mx-auto sm:px-0 px-[16px]">
+        <div class="grid lg:grid-cols-3 grid-cols-2 gap-[10px]">
+            {{#each courses}}
+                <div class="text-[18px] text-center bg-[#003459] text-white rounded-[20px] mb-[10px] pb-[10px]">
+                    <a class="" href="/course/{{this.ID}}">
+                        <img src="{{this.thumnail}}" class="my-[10px] p-[10px] w-full h-auto" alt="...">
+                        <h5 class="md:text-[18px] text-[14px]">{{this.name}}</h5>
+                        <p class="my-[10px] md:text-[18px] text-[14px]">{{this.description}}</p>
+                       <form action="/me/courses/register/{{../uuid}}" method="post">
+                            <!-- Hidden input fields for courseID and uuid -->
+                            <input type="hidden" name="courseID" value={{this.courseID}}>
+                            <input type="hidden" name="uuid" value={{../uuid}}>
+                            <button type="submit">Đăng ký</button>
+                        </form>
+                        {{!-- <a href="/me/register/{{this.courseID}}/{{../uuid}}" class="bg-sky-500/75 py-[10px] px-[20px] rounded-[10px]">Đăng ký</a> --}}
+                        
+                    </a>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+

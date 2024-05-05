@@ -1,0 +1,101 @@
+{{!-- ADMIN HOMEPAGE
+
+<div>
+    <a href="/admin/createT/{{ID}}">
+        <button>New Teacher</button>
+    </a>
+</div>
+
+<div>
+    <a href="/admin/createS/{{ID}}">
+        <button>New Student</button>
+    </a>
+</div>
+
+<div>
+    <a href="/admin/createC/{{ID}}">
+        <button>New Course</button>
+    </a>
+</div> --}}
+
+
+
+
+<div class="sub-header bg-[url('https://project-ltnc.vercel.app/assets/img/sub-header.jpg')] w-full h-[200px]">
+<div class="sub-header__title text-[50px] flex justify-center items-center h-full text-white">TRANG CHỦ</div>
+</div>
+<section class="section-1"> 
+    <div class="container">
+    <div class="section-1__wrap"> 
+        <div class="section-1__box">
+        {{!-- <div class="section-1__title">ỨNG DỤNG</div> --}}
+        <div class="section-1__items"> <a href="/admin/createC/{{ID}}"> 
+            <div class="section-1__item">
+                <div class="section-1__item--left">
+                <div class="section-1__img"><img src="/img/learning.jpg" alt=""/></div>
+                </div>
+                <div class="section-1__item--right">
+                <div class="section-1__item--title">1. THÊM KHÓA HỌC</div>
+                </div>
+            </div>
+            </a>
+
+            <a href="/admin/createS/{{ID}}">  
+                <div class="section-1__item">
+                    <div class="section-1__item--left">
+                    <div class="section-1__img"><img src="https://mybk.hcmut.edu.vn/my/images/upload/app_stinfo.png" alt=""/></div>
+                    </div>
+                    <div class="section-1__item--right">
+                    <div class="section-1__item--title">2. THÊM SINH VIÊN</div>
+                    </div>
+                </div>
+            </a>
+            <a href="/admin/createT/{{ID}}"> 
+                <div class="section-1__item">
+                    <div class="section-1__item--left">
+                    <div class="section-1__img"><img src="https://project-ltnc.vercel.app/assets/img/QLGV.png" alt=""/></div>
+                    </div>
+                    <div class="section-1__item--right">
+                    <div class="section-1__item--title">3. THÊM GIẢNG VIÊN</div>
+                    </div>
+                </div>
+            </a>
+            </div>
+            <div class="section-1__items">
+            <a href="/admin/courses/{{ID}}"> 
+                <div class="section-1__item">
+                    <div class="section-1__item--left">
+                    <div class="section-1__img"><img src="/img/allcourse.jpg" alt=""/></div>
+                    </div>
+                    <div class="section-1__item--right">
+                    <div class="section-1__item--title">4. TẤT CẢ KHÓA HỌC</div>
+                    </div>
+                </div>
+            </a>
+            <a href="/admin/teachers/{{ID}}"> 
+                <div class="section-1__item">
+                    <div class="section-1__item--left">
+                    <div class="section-1__img"><img src="/img/teachers.jpg" alt=""/></div>
+                    </div>
+                    <div class="section-1__item--right">
+                    <div class="section-1__item--title">5. TẤT CẢ GIẢNG VIÊN</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/admin/students/{{ID}}"> 
+                <div class="section-1__item">
+                    <div class="section-1__item--left">
+                    <div class="section-1__img"><img src="/img/allstudents.jpg" alt=""/></div>
+                    </div>
+                    <div class="section-1__item--right">
+                    <div class="section-1__item--title">6. TẤT CẢ SINH VIÊN</div>
+                    </div>
+                </div>
+            </a>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>

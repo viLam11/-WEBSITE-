@@ -1,0 +1,50 @@
+<div class="sub-header bg-[url('https://project-ltnc.vercel.app/assets/img/sub-header.jpg')] w-full h-[200px]">
+  <div class="sub-header__title text-[50px] flex justify-center items-center h-full text-white">BẢNG ĐIỂM</div>
+</div>
+<div class="container mx-auto sm:px-0 px-[16px]"> 
+  <div>
+    <div class="text-[20px] font-500 my-[10px] mb-[40px] text-center">Họ tên: {{name}}</div>
+    <div class="mb-[40px]">
+      <ul>
+        <li class="text-[20px] font-500 my-[10px]">Số tín chỉ tích lũy ngành: {{totalCredit}}</li>
+        <li class="text-[20px] font-500 my-[10px]">Điểm trung bình tích lũy ngành: {{GPA}}</li>
+        {{!-- <li class="text-[20px] font-500 my-[10px]"> Tính đến hết học kỳ : --</li> --}}
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-11 border-set text-center my-[20px] mb-[60px] lg:text-[16px] md:text-[14px] text-[12px]">
+      <div class="text-[#003459]">MÃ MÔN HỌC</div>
+      <div class="col-span-2 text-[#003459]">TÊN MÔN HỌC</div>
+      <div class="text-[#003459]">NHÓM-TỔ</div>
+      <div class="text-[#003459]">SỐ TÍN CHỈ</div>
+      <div class="col-span-3 text-[#003459]">ĐIỂM THÀNH PHẦN</div>
+      <div class="text-[#003459]">ĐIỂM THI</div>
+      <div class="col-span-2 text-[#003459]">ĐIỂM TỔNG KẾT</div>
+
+    {{#each courses}}
+        {{!-- <p>{{this.courseID}}</p>  --}}
+    
+        <div>{{@key}}</div>
+        <div class="col-span-2">{{this.subject_name}}</div>
+        <div>L01-C</div>
+        <div>{{this.credit}}</div>
+        <div class="col-span-3">
+          {{#each exercise}}
+            {{#if (or (eq @key 'BT') (eq @key 'BTL') (eq @key 'TN'))}}
+                <p>{{@key}}: {{this}}</p>
+            {{/if}}
+          {{/each}}
+        </div>
+        
+        
+        <div>
+            {{this.exercise.KT}}
+        </div>
+        <div class="col-span-2"> {{this.exercise.final}}</div>
+  
+    {{/each}}
+
+</div>
+
+</div>

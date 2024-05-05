@@ -1,0 +1,189 @@
+/* Reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+    .footer .info,
+    .footer .contact {
+        width: 100%; /* Adjust width to occupy full width on smaller screens */
+    }
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(231, 231, 231);
+    border-radius: 2px;
+    border-bottom: solid 2px black;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 40px;
+}
+
+.logo {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.logo img {
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+}
+#nav{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#nav>li{
+    display: inline-block;
+}
+#nav>li>a{
+    color: black;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#nav .subnav li:hover,
+#nav >li:hover >a{
+    background-color: rgb(179, 191, 198);
+    font-weight: bold;
+}
+#nav .subnav{
+    position: absolute;
+    list-style-type: none;
+    background-color: rgb(231, 231, 231);
+}
+#nav li a{
+    padding: 5px 12px;
+    display: inline-block;
+}
+#nav .subnav{
+    color: black;
+    text-decoration: none;
+    display: none;
+}
+#nav .subnav a{
+    text-decoration: none;
+    color: black;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .nav-arrow-down{
+    font-size: 12;
+}
+.content{
+    padding-top: 100px;
+}
+#course_name{
+    text-align: center;
+    color: black ;
+    font-weight: 400px;
+    padding-bottom: 10px;
+}
+
+.section-1{
+    display: flex;
+    justify-content: center;
+}
+.section-1 li{
+    display: inline-block;
+    line-height: 50px;
+    align-items: center;
+    align-content: space-evenly;
+    margin: 10px 5px;
+    border: black 1px solid;
+    border-radius: 12px 12px;
+}
+.section-1 li a{
+    text-decoration: none;
+    color: blue;
+    padding: 2px 20px;
+    
+}
+.section-1 ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.general .icon, .material .icon, .test .icon{
+    font-size: 20px;
+}
+.general, .material, .test {
+    padding: 20px;
+    border-bottom: solid 2px black;
+}
+.general > h2, .material >h2, .test>h2{
+    margin-bottom: 10px;
+}
+
+.content ul{
+    list-style-type: none;
+}
+
+.general ul li, .material ul li, .test ul li{
+    padding: 5px 10px;
+    border: 1px solid  #90969b;
+    border-radius: 8px 8px;
+    box-sizing: content-box;
+    margin-bottom: 10px;
+    background-color: #ecf1f5;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.material ul li{
+    background-color: antiquewhite;
+}
+
+.footer {
+    background-color: rgb(231, 231, 231);
+}
+
+.footer p {
+    font-family: BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: bold;
+    color: #252641;
+    font-size: 20px;
+    padding: 10px;
+    text-shadow: #252641;
+    text-decoration: underline;
+}
+
+.footer ul li {
+    padding: 4px 16px;
+    list-style-type: none;
+}
+.footer .contact {
+    display: inline;
+    width: 60vw;
+    float: left;
+}
+
+.footer .info {
+    display: inline;
+    width: 30vw;
+    margin-right: 40px;
+    float: right;
+}

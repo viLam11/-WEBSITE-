@@ -1,0 +1,25 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">MSSV</th>
+      <th scope="col">Họ và tên</th>
+      <th scope="col">Kiểm tra</th>
+      <th scope="col">Bài tập lớn</th>
+      <th scope="col">Giữa kì</th>
+      <th scope="col">Cuối kì</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each students}}
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.name}}</td>
+      <td><input type='double', name='exam-{{this.id}}'></td>
+      <td><input type='double', name='assign-{{this.id}}'></td>
+      <td><input type='double', name='midterm-{{this.id}}'></td>
+      <td><input type='double', name='final-{{this.id}}'></td>
+      <td><button>submit</button></td>
+    </tr>
+   {{/each}}
+  </tbody>
+</table>

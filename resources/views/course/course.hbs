@@ -1,0 +1,45 @@
+{{!-- 
+<h2>COURSE PAGE</h2>
+<div class="mt-4">
+    <div class="row">
+        {{#each courses}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card card-course-item" style="width: 20rem;">
+                <a href="/course/{{this.ID}}">
+                     <img src="{{this.thumnail}}" class="card-img-top" alt="...">
+                </a>
+
+                <div class="card-body">
+                    <a href="/course/{{this.ID}}">
+                        <h5 class="card-title">{{this.name}}</h5>
+                    </a>
+                    <p class="card-text">{{this.description}}</p>
+                    <a href="#" class="btn btn-primary">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        
+    </div>
+</div> --}}
+
+ 
+<div class="sub-header bg-[url('https://project-ltnc.vercel.app/assets/img/sub-header.jpg')] w-full h-[200px]">
+  <div class="sub-header__title text-[50px] flex justify-center items-center h-full text-white">TẤT CẢ KHÓA HỌC</div>
+</div>
+<div class="my-[40px]">
+    <div class="container mx-auto sm:px-0 px-[16px]">
+        <div class="grid lg:grid-cols-3 grid-cols-2 gap-[10px]">
+            {{#each courses}}
+                <div class="text-[18px] text-center bg-[#003459] text-white rounded-[20px] mb-[10px] pb-[10px]">
+                    <a class="" href="/admin/course/{{this.courseID}}/{{../ID}}">
+                        <img src="{{this.thumnail}}" class="my-[10px] p-[10px] w-full h-auto" alt="...">
+                        <h5 class="md:text-[18px] text-[14px]">{{this.name}}</h5>
+                        <p class="my-[10px] md:text-[18px] text-[14px]">{{this.description}}</p>
+                        <button class="bg-sky-500/75 py-[10px] px-[20px] rounded-[10px]" <a href="/admin/course/{{this.courseID}}/{{../ID}}">Chi tiết</a></button>
+                    </a>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

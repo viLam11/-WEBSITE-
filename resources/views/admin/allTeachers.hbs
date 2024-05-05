@@ -1,0 +1,41 @@
+<div class="sub-header bg-[url('https://project-ltnc.vercel.app/assets/img/sub-header.jpg')] w-full h-[200px]">
+    <div class="sub-header__title text-[50px] flex justify-center items-center h-full text-white">DANH SÁCH TẤT CẢ GIẢNG VIÊN</div>
+</div>
+
+<table class="table container mx-auto sm:px-0 px-[16px] mb-[50px] text-center my-[50px]">
+    <thead>
+        <tr>
+        <th scope="col" class="border-[2px]">STT</th>
+        <th scope="col" class="border-[2px]">Họ và tên</th>
+        <th scope="col" class="border-[2px]">Khoa - Ngành</th>
+        <th scope="col" class="border-[2px]">Gmail</th>
+        <th scope="col" class="border-[2px]">Trình độ</th>
+        <th scope="col" class="border-[2px]">Bộ môn</th>
+        <th scope="col" class="border-[2px]">Môn giảng dạy</th>
+        <th scope="col" class="border-[2px]">Hồ sơ</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each teachers}}
+            <tr>
+            <th scope="row" class="border-[2px]">{{sum @index 1}}</th>
+            <td class="border-[2px]">{{this.name}}</td>
+            <td class="border-[2px]">{{this.falcuty}}</td>
+            <td class="border-[2px]">{{this.email}}</td>
+            <td class="border-[2px]">{{this.status}}</td>
+            <td class="border-[2px]">
+                {{#each this.main_subject}}
+                    <p>{{@key}}</p>
+                {{/each}}
+            </td>
+            <td class="border-[2px]">
+                {{#each this.teaching_course}}
+                    <p>{{this.name}}</p>
+                {{/each}}
+            </td>
+            <td class="border-[2px]"><a href="/admin/teacherInfo/{{this.teacherUID}}/{{../ID}}">thông tin</a></td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

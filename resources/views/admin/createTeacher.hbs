@@ -1,0 +1,115 @@
+{{!-- <div class="mt-4">
+    <h3>Thêm giảng viên</h3>
+    <form method="post" action=""> --}}
+        {{!-- <div class="form-group">
+            <label for="name">Tên</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div> --}}
+        {{!-- <div class="form-group">
+            <label for="cccd">Căn cước công dân</label>
+            <input type="text" class="form-control" id="cccd" name="cccd">
+        </div> --}}
+        {{!-- <div class="form-group">
+            <label for="bdate">Ngày sinh</label>
+            <input type="text" class="form-control" id="bdate" name="bdate">
+        </div> --}}
+        {{!-- <div class="form-group">
+            <label for="address">Quê quán</label>
+            <input type="text" class="form-control" id="address" name="address">
+        </div> --}}
+        {{!-- <div class="form-group">
+            <label for="gender">Giới tính</label>
+            <input type="text" class="form-control" id="gender" name="gender">
+        </div> --}}
+        {{!-- <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div> --}}
+        {{!-- <div class="form-group">
+            <label for="phone_number">Số điện thoại</label>
+            <input type="text" class="form-control" id="phone_number" name="phone_number">
+        </div> --}}
+        {{!-- <div class="form-group">
+            <label for="falcuty">Khoa</label>
+            <input type="text" class="form-control" id="falcuty" name="falcuty">
+        </div> --}}
+        {{!-- <div class="form-group">
+            <label for="school">Tốt nghiệp tại: </label>
+            <input type="text" class="form-control" id="school" name="school">
+        </div> --}}
+        {{!-- <div class="form-group">
+            <label for="status">Trình độ</label>
+            <input type="text" class="form-control" id="status" name="status">
+        </div> --}}
+
+        {{!-- <button type="submit" class="btn btn-primary">Thêm giảng viên</button>
+    </form>
+</div> --}}
+
+
+
+<div class="sub-header bg-[url('https://project-ltnc.vercel.app/assets/img/sub-header.jpg')] w-full h-[200px]">
+    <div class="sub-header__title text-[50px] flex justify-center items-center h-full text-white">THÊM GIẢNG VIÊN</div>
+</div>
+<div>
+    <div class="container mx-auto sm:px-0 px-[16px] mb-[50px]">
+    <form action="" method="post"> 
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="achieviment">Thành tích</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="achieviment" id="achieviment" placeholder="VD: achieviment_one(năm); achieviment_two(năm); ..."/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="address">Địa chỉ</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="address" id="address" placeholder="VD: HCM city"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="cccd">Căn cước công dân</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="cccd" id="cccd"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="bdate">Ngày tháng năm sinh</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="date" name="bdate" id="bdate"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="email">Email</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="email" name="email" id="email" placeholder="aaaa@gmail.com"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="falcuty">Khoa</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="falcuty" id="falcuty"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="main_subject">Môn học chính</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="main_subject" id="main_subject" placeholder="VD: subject_one; subject-two;..."/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="name">Họ và tên</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="name" id="name" placeholder="VD: Lê Văn A"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="gender">Giới tính</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="gender" id="gender" placeholder="VD: Nam/Nữ"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="phone">Số điện thoại</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="tel" name="phone" id="phone" placeholder="VD: 0999xxxx"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="research_dir">Nghiên cứu khoa học</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="research_dir" id="research_dir" placeholder="VD: research_one; research_two"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="school">Trường học</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="school" id="school"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="status">Chức vị</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="status" id="status" placeholder="VD: Tiến Sĩ"/>
+        </div>
+        <div class="text-center">
+        <button class="bg-sky-500/75 hover:bg-[blue] py-[10px] px-[20px] rounded-[10px] mt-[30px]">SUBMIT</button>
+        </div>
+    </form>
+    </div>
+</div>
+

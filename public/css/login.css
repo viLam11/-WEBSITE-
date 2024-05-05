@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.btn {
+  border: 3px solid #003459;
+  background-color: #003459;
+  color: white;
+  border-radius: 12px;
+  margin: 20px;
+  font-size: 24px;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.section-2 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-2__wrap {
+  background-color: rgb(173, 166, 166);
+  width: 50%;
+}
+.section-2__form {
+  text-align: center;
+}
+.section-2__group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px;
+  border: 3px solid #003459;
+  border-radius: 14px;
+  height: 50px;
+}
+.section-2__group input {
+  margin-left: 10px;
+  background-color: transparent;
+  border: 0;
+  flex: 1;
+  outline: 0;
+  font-size: 18px;
+}
+.section-2__group label {
+  margin-left: 10px;
+  color: rgb(0, 0, 0);
+}
+.section-2__sub {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.section-2__sub a {
+  text-decoration: none;
+}
+@media (max-width: 767.98px) {
+  .section-2__wrap {
+    width: 100%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .section-2__wrap {
+    width: 75%;
+  }
+}
+@media (max-width: 575.98px) {
+  .section-2__form {
+    font-size: 14px;
+  }
+  .section-2__wrap {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style_login.css.map */

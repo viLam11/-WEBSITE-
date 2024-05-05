@@ -1,0 +1,30 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+header {
+    height: 40px;
+    font-size: 20px;
+}
+
+.course-card {
+    width: 200px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    border-radius: 10px; /* Adjust border-radius as needed */
+    overflow: hidden; /* Ensure content doesn't overflow the rounded corners */
+  }
+
+  .course-card .section-1__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .course-card .section-1__img img {
+    width: 100%; /* Ensures the image fills its container */
+    height: 100%; /* Ensures the image fills its container */
+    object-fit: cover; /* Ensures the image covers the entire container */
+  }
+
+ .section-1__item {
+  min-height: 500px;
+ }

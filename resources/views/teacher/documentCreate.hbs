@@ -1,0 +1,33 @@
+<div class="sub-header bg-[url('assets/img/sub-header.jpg')] w-full h-[200px]">
+      <div class="sub-header__title text-[50px] flex justify-center items-center h-full text-white">document create</div>
+    </div>
+    <div class="my-[50px]">
+      <div class="container mx-auto sm:px-0 px-[16px]">
+        <form action="">
+          <div class="bg-[#ddd] p-[20px] rounded-[10px] mb-[20px] flex justify-between "> 
+            <div>
+              <label class="mr-[10px]" for="name">tên</label>
+              <input class="bg-transparent outline-0 text-[blue] boder-[1px]" type="text" id="name" placeholder="name" name="name"/>
+            </div>
+            <div>
+              <label class="mr-[10px]" for="link">đường dẫn</label>
+              <input class="bg-transparent outline-0 text-[blue]" type="link" id="link" placeholder="link" name="link"/>
+            </div>
+            <div>
+               <label for = "type" class="mr-[10px]">Loại tài liệu của bạn ?</label>
+<select name = "type" id = "name" class="bg-transparent text-[blue]">
+<option value = "DKMH">Đề cương môn học</option>
+<option value = "document">Tài Liệu</option> <!--selected ở đây là cày mặc định màu đỏ khi mở lên-->
+<option value = "quiz" selected>Quiz</option>
+</select>
+            </div>
+          </div>
+          <div class="add text-center py-[20px] bg-[gray] rounded-[10px] text-white hover:bg-[blue] cursor-pointer">
+             <i class="fa-solid fa-plus"></i></div>
+          <div class="text-center">
+            <button class="p-[20px] bg-[#003459] rounded-[8px] text-white mt-[30px]">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/JS/create.js"> </script>

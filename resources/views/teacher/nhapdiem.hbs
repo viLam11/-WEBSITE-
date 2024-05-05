@@ -1,0 +1,37 @@
+<div class="sub-header bg-[url('https://project-ltnc.vercel.app/assets/img/sub-header.jpg')] w-full h-[200px]">
+    <div class="sub-header__title text-[50px] flex justify-center items-center h-full text-white">{{courseName}}-{{teacherName}}</div>
+</div>
+
+
+<form method="POST" class="container mx-auto sm:px-0 px-[16px] min-h-[400px] my-[50px]">
+    <table class="table text-center w-full">
+        <thead>
+            <tr>
+            <th scope="col" class="border-[2px] ">STT</th>
+            <th scope="col" class="border-[2px] ">MSSV</th>
+            <th scope="col" class="border-[2px] ">Name</th>
+            <th scope="col" class="border-[2px] ">Exercise</th>
+            <th scope="col" class="border-[2px] ">Assignment</th>
+            <th scope="col" class="border-[2px] ">Test</th>
+            <th scope="col" class="border-[2px] ">Lab</th>
+            <th scope="col" class="border-[2px] ">Final</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each students}}
+                <tr>
+                <th class="border-[2px]" scope="row">{{sum @index 1}}</th>
+                <td class="border-[2px]">{{this.id}}</td>
+                <td class="border-[2px]">{{this.name}}</td>
+                <td class="border-[2px]"><input type="number" min="0" max="10" name="exercise" class="bg-[#90968a] text-center"></td>
+                <td class="border-[2px]"><input type="number" min="0" max="10" name="assign" class="bg-[#90969b] text-center"></td>
+                <td class="border-[2px]"><input type="number" min="0" max="10" name="test" class="bg-[#90968a] text-center"></td>
+                <td class="border-[2px]"><input type="number" min="0" max="10" name="lab" class="bg-[#90969b] text-center"></td>
+                <td class="border-[2px]"><input type="number" min="0" max="10" name="final" class="bg-[#90968a] text-center"></td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <div class="text-center"><button class="bg-[blue] py-[10px] px-[50px] mt-[20px] text-white hover:bg-[red] rounded-[5px] opacity-75">Submit</button></div>
+</form>

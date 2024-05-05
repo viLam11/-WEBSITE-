@@ -1,0 +1,95 @@
+<main class="content">
+    <h1 id="course_name">{{course.name}} _ {{course.instructor}}</h1>
+    <div class="section-1">
+        <ul>
+            <li><a href="/#">Khóa học</a></li>
+            <li><a href="/#">Điểm số</a></li>
+            <li><a href="/#">Danh sách HS</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <a href =' {{course.thumail}}'></a>
+    </div>
+
+    <div class="general">
+        <h2><i class="icon fa-solid fa-play"></i>  Thông báo chung</h2>
+        <ul>
+            <li>Đề cương môn học <a href=""></a></li>
+            <li>Thông báo<a href=""></a></li>
+            <li>Danh sách thành viên<a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+
+    <div class="material">
+        <h2><i class="icon fa-solid fa-play"></i> Tài liệu</h2>
+        <ul>
+             
+            <li>Giáo trình: <a href=""></a></li>
+            <li>Tài liệu tham khảo: <a href=""></a></li>
+            <li>Video: <a href="{{course.videoID}}"></a></li>
+            {{#each material}}
+             <li> {{this.name}}  <a href="{{this.val}}">{{this.val}}</a></li>
+             {{/each}}
+        </ul>
+    </div>
+
+    <div class="test">
+        <h2><i class="icon fa-solid fa-play"></i> Bài kiểm tra</h2>
+        <ul>
+            <li>Quiz 1: <a href=""></a></li>
+            <li>Quiz 2: <a href=""></a></li>
+        </ul>
+    </div>
+</main>
+
+{{!-- 
+        
+
+    
+<main class="content">
+    <h1 id="course_name">Tên môn học _ Giảng viên</h1>
+    <div class="section-1">
+        <ul>
+            <li><a href="">Khóa học</a></li>
+            <li><a href="">Điểm số</a></li>
+            <li><a href="">Năng lực</a></li>
+        </ul>
+    </div>
+
+    <div class="general">
+        <h2><i class="icon fa-solid fa-play"></i>  Thông báo chung</h2>
+        <ul>
+            <li>Đề cương môn học<a href=""></a></li>
+            <li>Thông báo<a href=""></a></li>
+            <li>Danh sách thành viên<a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+
+    <div class="material">
+        <h2><i class="icon fa-solid fa-play"></i> Tài liệu</h2>
+        <ul>
+            <li>Giáo trình: <a href=""></a></li>
+            <li>Tài liệu tham khảo: <a href=""></a></li>
+            <li>Chương 1: <a href=""></a></li>
+            <li>Chương 2: <a href=""></a></li>
+            <li>Chương 3: <a href=""></a></li>
+            <li>Chương 4: <a href=""></a></li>
+        </ul>
+    </div>
+
+    <div class="test">
+        <h2><i class="icon fa-solid fa-play"></i> Bài kiểm tra</h2>
+        <ul>
+            <li>Quiz 1: <a href=""></a></li>
+            <li>Quiz 2: <a href=""></a></li>
+        </ul>
+    </div>
+</main>
+
+
+</body> --}}

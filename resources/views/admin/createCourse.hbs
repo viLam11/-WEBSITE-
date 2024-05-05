@@ -1,0 +1,97 @@
+{{!-- <div class="mt-4">
+    <h3>Thêm học sinh</h3>
+    <form method="post" action=""> --}}
+        {{!-- <div class="form-group">
+            <label for="name">Tên môn học</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div> --}}
+        {{!-- <div class="form-group">
+            <label for="courseID">Mã môn học</label>
+            <input type="text" class="form-control" id="courseID" name="courseID">
+        </div> --}}
+        {{!-- <div class="form-group">
+            <label for="description">Mô tả</label>
+            <input type="text" class="form-control" id="description" name="description">
+        </div> --}}
+        {{!-- <div class="form-group">
+            <label for="credit">Số tín chỉ</label>
+            <input type="text" class="form-control" id="credit" name="credit">
+        </div> --}}
+        {{!-- <div class="form-group">
+            <label for="teacher">Giáo viên giảng dạy</label>
+            <input type="text" class="form-control" id="teacher" name="teacher">
+        </div> --}}
+        {{!-- <div class="form-group">
+            <label for="thumnail">Ảnh bìa</label>
+            <input type="text" class="form-control" id="thumnail" name="thumnail">
+        </div> --}}
+        
+        {{!-- <div>THỜI KHÓA BIỂU</div>
+        <div class="form-group"> --}}
+            {{!-- <label for="day">Thứ</label>
+            <input type="text" class="form-control" id="day" name="day"> --}}
+            {{!-- <label for="time">Thời gian</label>
+            <input type="text" class="form-control" id="time" name="time"> --}}
+            {{!-- <label for="locattion">Địa điểm</label>
+            <input type="text" class="form-control" id="locattion" name="locattion"> --}}
+            {{!-- <label for="weeks">Tuần học</label>
+            <input type="text" class="form-control" id="weeks" name="weeks"> --}}
+        {{!-- </div> --}}
+        
+        {{!-- <button type="submit" class="btn btn-primary">Tạo khóa học mới</button>
+    </form>
+</div> --}}
+
+<div class="sub-header bg-[url('https://project-ltnc.vercel.app/assets/img/sub-header.jpg')] w-full h-[200px]">
+    <div class="sub-header__title text-[50px] flex justify-center items-center h-full text-white">THÊM KHÓA HỌC</div>
+</div>
+<div>
+    <div class="container mx-auto sm:px-0 px-[16px] mb-[50px]">
+    <form class="mt-[50px]" action="" method="post">
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="day">Thứ</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="day" id="day" placeholder="VD: 2 (monday)"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="locattion">Địa điểm</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="locattion" id="locattion" placeholder="VD: H1-212"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="time">Begin time --- End time</label><br/>
+        <input class="outline-0 m-[10px] text-[blue]" type="time" name="time" id="time"/>
+        <input class="outline-0 m-[10px] text-[blue]" type="time" name="time" id="time"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="weeks">Tuần học</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="weeks" id="weeks" placeholder="VD 3|4|5 (tuần 3, tuần 4, tuần 5)"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="courseID">Mã môn học</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="courseID" id="courseID"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="credit">Tín chỉ</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="number" name="credit" id="credit"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="description">Mô tả</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="description" id="description"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="name">Tên môn học</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="name" id="name"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="teacher">Giáo viên</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="text" name="teacher" id="teacher"/>
+        </div>
+        <div class="border-indigo-500/100 border-b-[5px] mt-[20px]">
+        <label for="thunmnail">Hình ảnh</label><br/>
+        <input class="w-full outline-0 m-[10px] text-[blue]" type="url" name="thumnail" id="thumnail" placeholder="img.com"/>
+        </div>
+        <div class="text-center">
+        <button class="bg-sky-500/75 hover:bg-[blue] py-[10px] px-[20px] rounded-[10px] mt-[30px]">SUBMIT</button>
+        </div>
+    </form>
+    </div>
+</div>

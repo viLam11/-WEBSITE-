@@ -1,0 +1,33 @@
+<div class="sub-header bg-[url('https://project-ltnc.vercel.app/assets/img/sub-header.jpg')] w-full h-[200px]">
+  <div class="sub-header__title text-[50px] flex justify-center items-center h-full text-white">LỊCH DẠY</div>
+</div>
+<div class="container mx-auto sm:px-0 px-[16px] my-[30px] text-center"> 
+    <div class="text-[20px] font-bold mb-[30px]">Họ tên: {{name}}</div>
+</div>
+
+<section class="my-[40px] py-[50px] min-h-[400px] min-w-[1200px]">
+    <div class="container mx-auto sm:px-0 mb-auto ">
+        <div class="text-[#003459] text-center grid grid-cols-12 border-[2px] truncate">
+            <div class="border-[2px] py-[5px] truncate">MÃ MÔN</div>
+            <div class="border-[2px] py-[5px] truncate col-span-3">TÊN MÔN HỌC</div>
+            <div class="border-[2px] py-[5px] truncate">SỐ TÍN CHỈ</div>
+            <div class="border-[2px] py-[5px] truncate col-span-2">ĐỊA ĐIỂM</div>
+            <div class="border-[2px] py-[5px] truncate">THỨ</div>
+            <div class="border-[2px] py-[5px] truncate">THỜI GIAN</div>
+            <div class="border-[2px] py-[5px] truncate col-span-3">TUẦN</div>
+
+        {{#each timetable}}
+            {{!-- <p>{{this.courseID}}</p>  --}}
+
+            <div class="border-[2px] py-[5px] truncate">{{@key}}</div>
+            <div class="border-[2px] py-[5px] truncate col-span-3">{{this.name}}</div>
+            <div class="border-[2px] py-[5px] truncate">{{this.credit}}</div>
+            <div class="border-[2px] py-[5px] truncate col-span-2">{{this.locattion}}</div>
+            <div class="border-[2px] py-[5px] truncate">{{this.day}}</div>
+            <div class="border-[2px] py-[5px] truncate">{{this.time}}</div>
+            <div class="border-[2px] py-[5px] truncate col-span-3">{{this.weeks}}</div>
+
+        {{/each}}
+        </div>
+    </div>
+</section>

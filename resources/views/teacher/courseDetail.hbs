@@ -1,0 +1,65 @@
+<main class="content pt-[0px]">
+    <div class="sub-header bg-[url('https://project-ltnc.vercel.app/assets/img/sub-header.jpg')] w-full h-[200px]">
+        <div class="sub-header__title text-[50px] flex justify-center items-center h-full text-white">{{course.name}} - {{course.courseID}}</div>
+    </div>
+    <div class="section-1">
+        <ul>
+            <li><a href="/teacher/documentCreate/{{course.courseID}}/{{ID}}">Thêm tài liệu</a></li>
+            <li><a href="/teacher/score/{{course.courseID}}/{{ID}}">Cập nhật điểm</a></li>
+            <li><a href="/teacher/studentList/{{course.courseID}}/{{ID}}">Danh sách học sinh</a></li>
+        </ul>
+    </div>
+
+    <div class="general text-[20px]">
+        <h2><i class="icon fa-solid fa-play"></i>  Thông báo chung</h2>
+        <div>
+            <div class="border-[#90969b]-[1px] bg-[#ecf1f5] rounded-[8px] py-[5px] px-[10px] tick_one cursor-pointer mb-[10px]">Đề cương môn học
+                <div class="ml-[20px] text-[blue] show_one">
+                    {{#each material.DCMH}}
+                        <p>{{this.name}}: <a href="{{this.link}}">{{this.link}}</a></p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="border-[#90969b]-[1px] bg-[#ecf1f5] rounded-[8px] py-[5px] px-[10px] tick_one cursor-pointer mb-[10px]">Mô tả môn học: 
+                <div class="ml-[20px] text-[blue] show_one">{{course.description}}</div>
+            </div>
+            <div class="border-[#90969b]-[1px] bg-[#ecf1f5] rounded-[8px] py-[5px] px-[10px] tick_one cursor-pointer mb-[10px]">Danh sách thành viên
+                <div class="ml-[20px] text-[blue] show_one">
+                    <a href=""></a>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <div class="material text-[20px]">
+        <h2><i class="icon fa-solid fa-play"></i> Tài liệu</h2>
+        {{!-- <ul>
+            {{#each material.document}}
+                <li>{{this.name}}: <a href="{{this.link}}">{{this.link}}</a></li>
+            {{/each}}
+        </ul> --}}
+        <div>
+            <div class="border-[#90969b]-[1px] bg-[antiquewhite] rounded-[8px] py-[5px] px-[10px] tick_one cursor-pointer mb-[10px]">Tài liệu môn học
+                <div class="ml-[20px] text-[blue] show_one">
+                    {{#each material.document}}
+                        <p>{{this.name}}: <a href="{{this.link}}">{{this.link}}</a></p>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="test text-[20px]">
+        <h2><i class="icon fa-solid fa-play"></i> Bài kiểm tra</h2>
+        <div>
+            <div class="border-[#90969b]-[1px] bg-[#ecf1f5] rounded-[8px] py-[5px] px-[10px] tick_one cursor-pointer mb-[10px]">Quiz môn học
+                <div class="ml-[20px] text-[blue] show_one">
+                    {{#each material.quiz}}
+                        <p>Quiz {{this.name}}: <a href="{{this.link}}">{{this.link}}</a></p>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="/JS/course_SV.js"> </script>

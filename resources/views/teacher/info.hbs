@@ -1,0 +1,87 @@
+<div class="sub-header bg-[url('https://project-ltnc.vercel.app/assets/img/sub-header.jpg')] w-full h-[200px]">
+    <div class="sub-header__title text-[50px] flex justify-center items-center h-full text-white">THÔNG TIN GIẢNG VIÊN</div>
+</div>
+<section class="py-[50px]">
+    <div class="container mx-auto sm:px-0 px-[16px]">
+    <div class="flex justify-center items-center">
+        <div class="border rounded-[50%] truncate md:w-[100px] w-[80px] aspect-square"> <img class="object-contain" src="assets/img/top-anime-nam-dep.jpg" alt=""/></div>
+        <div class="md:text-[30px] text-[25px] font-[700] ml-[10px]">{{teach.name}}</div>
+    </div>
+    <div class="flex mt-[20px] border-b-[5px] pb-[20px]">
+        <div class="flex-1 ml-[10px]">
+            <div class="mb-[15px] pb-[5px] border-b text-center md:text-[20px] sm:text-[18px] text-[14px] font-[500] flex">
+              <p class="w-[30%] border-r-[2px]">THÔNG TIN</p>
+              <p class="flex-1">GIẢNG VIÊN </p>
+            </div>
+            <ul class="text-center">
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Số CCCD:</p>
+                <p class="flex-1">{{teach.cccd}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Email:</p>
+                <p class="flex-1">{{teach.email}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Ngày sinh:</p>
+                <p class="flex-1">{{teach.day_of_birth}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Khoa:</p>
+                <p class="flex-1">{{teach.falcuty}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Trình độ:</p>
+                <p class="flex-1">{{teach.status}}</p>
+              </li>
+            </ul>
+        </div>
+    </div>
+    <div class="flex mt-[20px] border-b-[5px] pb-[20px]">
+        {{!-- <div class="w-[45%] pr-[20px] border-r">
+        <div class="mb-[15px] pb-[5px] border-b text-center md:text-[20px] sm:text-[18px] text-[14px] font-[500]">Chuyên môn</div>
+        <ul>
+            <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Hướng nghiên cứu:</li>
+            <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Công bố khoa học:</li>
+            <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Bộ môn: </li>
+        </ul>
+        </div> --}}
+        <div class="flex-1 ml-[10px]">
+            <div class="mb-[15px] pb-[5px] border-b text-center md:text-[20px] sm:text-[18px] text-[14px] font-[500]">
+                <p class="w-[30%] border-r-[2px]">CHUYÊN MÔN</p>
+                <p class="flex-1"></p>
+            </div>
+            <ul class="text-center">
+                
+                <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                    <p class="w-[30%] border-r-[2px]">Hướng nghiên cứu:</p>
+                    <p class="flex-1">
+                        {{#each teach.research_dir}}
+                            {{@key}}: {{this.name}} ;
+                            <br>
+                        {{/each}}
+                    </p> 
+                </li>
+                <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                    <p class="w-[30%] border-r-[2px]">Công bố khoa học:</p>
+                    <p class="flex-1">
+                        {{#each teach.achieviment}}
+                            {{@key}} ;
+                            <br>
+                        {{/each}}
+                    </p>
+                </li>
+                <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                    <p class="w-[30%] border-r-[2px]">Bộ môn:</p>
+                    <p class="flex-1">
+                        {{#each teach.main_subject}}
+                            {{@key}}: {{this.name}} ;
+                            <br>
+                        {{/each}}
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</section>

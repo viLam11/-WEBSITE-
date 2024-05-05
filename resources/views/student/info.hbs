@@ -1,0 +1,198 @@
+{{!-- <!DOCTYPE html >
+<html> 
+  <head>
+    <title>Trang Infor </title>
+    <link rel="stylesheet" href="assets/css/style_infor.css"/>
+    <script src="https://cdn.tailwindcss.com"> </script>
+    <script src="tailwind.config.js"> </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="assets/css/style_layouts.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  </head>
+  <body>
+
+    
+    <header class="header_one">
+      <div class="container"> 
+        <div class="header_one__wrap"> 
+          <button class="header_one__button-menu"><i class="fa-solid fa-bars"></i></button>
+          <div class="header_one__logo"> <a href="/"><img src="assets/img/HCMCUT.svg.png" alt="Monito"/></a></div>
+          <nav class="header_one__menu"> 
+            <ul> 
+              <li><a href="index.html">Trang Chủ  </a></li>
+              <li><a href="index.html">Khóa Học  </a></li>
+              <li><a href="index.html">Thông Tin  </a></li>
+              <li><a href="index.html">Liên Hệ  </a></li>
+            </ul>
+          </nav>
+          <div class="header_one__search"> 
+            <form>
+              <button> <i class="fa-solid fa-magnifying-glass"></i></button>
+              <input type="text" placeholder="Nhập từ khóa ...."/>
+            </form>
+          </div><a class="button button--primiry" href="/">Tham gia cộng đồng </a>
+          <button class="header_one__button-search"> <i class="fa-solid fa-magnifying-glass"> </i></button>
+        </div>
+      </div>
+    </header> --}}
+
+    <div class="sub-header bg-[url('https://project-ltnc.vercel.app/assets/img/sub-header.jpg')] w-full h-[200px]">
+      <div class="sub-header__title text-[50px] flex justify-center items-center h-full text-white">THÔNG TIN SINH VIÊN</div>
+    </div>
+
+    <section class="py-[50px]">
+      <div class="container mx-auto sm:px-0 px-[16px]">
+        <div class="flex justify-center items-center">
+          <div class="border rounded-[50%] truncate md:w-[100px] w-[80px] aspect-square"> <img class="object-contain" src="" alt=""/></div>
+          <div class="md:text-[30px] text-[25px] font-[700] ml-[10px]">{{stu.name}}</div>
+        </div>
+        <div class="flex mt-[20px] border-b-[5px] pb-[20px]">
+          {{!-- <div class="w-[45%] pr-[20px] border-r">
+            <div class="mb-[15px] pb-[5px] border-b text-center md:text-[20px] sm:text-[18px] text-[14px] font-[500]">THÔNG TIN</div>
+            <ul>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">ID Number:</li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Số CCCD:</li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Số điện thoại:</li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Giới tính:</li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Ngày sinh:</li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Địa chỉ:</li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Email:</li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Tình trạng:</li>
+            </ul>
+          </div> --}}
+          <div class="flex-1 ml-[10px]">
+            <div class="mb-[15px] pb-[5px] border-b text-center md:text-[20px] sm:text-[18px] text-[14px] font-[500] flex">
+              <p class="w-[30%] border-r-[2px]">THÔNG TIN</p>
+              <p class="flex-1">SINH VIÊN</p>
+            </div>
+            <ul class="text-center">
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">ID Number:</p>
+                <p class="flex-1">{{stu.ID}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Số CCCD:</p>
+                <p class="flex-1">{{stu.cccd}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Số điện thoại:</p>
+                <p class="flex-1">{{stu.phone_number}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Giới tính:</p>
+                <p class="flex-1">{{stu.gender}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Ngày sinh:</p>
+                <p class="flex-1">{{stu.day_of_birth}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Địa chỉ:</p>
+                <p class="flex-1">{{stu.address}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Email:</p>
+                <p class="flex-1">{{stu.email}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Tình trạng:</p>
+                <p class="flex-1">{{stu.status}}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex mt-[20px] border-b-[5px] pb-[20px]">
+          {{!-- <div class="w-[45%] pr-[20px] border-r">
+            <div class="mb-[15px] pb-[5px] border-b text-center md:text-[20px] sm:text-[18px] text-[14px] font-[500]">THÔNG TIN</div>
+            <ul>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Tình trạng:</li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Lớp:</li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Giáo viên chủ nhiệm:</li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Ngành học:</li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Khoa:</li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Đơn vị quản lý:</li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Bậc:</li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400]">Hình thức đào tạo:</li>
+            </ul>
+          </div> --}}
+          <div class="flex-1 ml-[10px]">
+            <div class="mb-[15px] pb-[5px] border-b text-center md:text-[20px] sm:text-[18px] text-[14px] font-[500] flex flex-wrap">
+              <p class="w-[30%] border-r-[2px]">THÔNG TIN</p>
+            </div>
+            <ul class="text-center">
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Tình trạng:</p>
+                <p class="flex-1">{{stuTeach.condition}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Lớp:</p>
+                <p class="flex-1">{{stuTeach._class}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Giáo viên chủ nhiệm:</p>
+                <p class="flex-1">{{stuTeach.head_teacher}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Ngành học:</p>
+                <p class="flex-1">{{stuTeach.falcuty}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Khoa:</p>
+                <p class="flex-1">{{stuTeach.management_unit}}</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Bậc:</p>
+                <p class="flex-1">Đại học</p>
+              </li>
+              <li class="mb-[10px] border-b md:text-[20px] sm:text-[18px] text-[14px] font-[400] text-[#003459] flex flex-wrap">
+                <p class="w-[30%] border-r-[2px]">Hình thức đào tạo:</p>
+                <p class="flex-1">{{stuTeach.training_form}}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    {{!-- <footer class="footer"> 
+      <div class="container"> 
+        <div class="footer__top"> 
+          <h3 class="footer__title">Đăng ký ngay để được tư vấn tuyển sinh</h3>
+          <form class="footer__form" action=""> 
+            <input type="email" placeholder="Nhập email của bạn ..."/>
+            <button type="submit">Đăng Ký Ngay </button>
+          </form>
+        </div>
+        <div class="footer__middle">  
+          <nav class="footer__menu">
+            <ul> 
+              <li><a href="/">Trang Chủ</a></li>
+              <li><a href="/">Danh Mục</a></li>
+              <li><a href="/">Thông Tin</a></li>
+              <li><a href="/">Liên Hệ</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__socials"> 
+            <ul>
+              <li><a href="/" target="_blank"><i class="fa-brands fa-facebook"> </i></a></li>
+              <li><a href="/" target="_blank"><i class="fa-brands fa-x-twitter"> </i></a></li>
+              <li><a href="/" target="_blank"><i class="fa-brands fa-instagram"> </i></a></li>
+              <li><a href="/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom"> 
+          <div class="footer__copyright">© 2023 Ly Vinh Thai. All rights reserved.</div>
+          <div class="footer__logo"><a href="/"><img src="assets/img/Group.png" alt=""/></a></div>
+          <nav class="footer__links"> 
+            <ul>
+              <li><a href="/"> Điều khoản dịch vụ</a></li>
+              <li><a href="/"> Chính sách bảo mật</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html> --}}
